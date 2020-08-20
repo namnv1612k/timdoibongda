@@ -32,7 +32,7 @@
 <!--  END LOADER -->
 
 <!--  BEGIN NAVBAR  -->
-@include('backend.layouts.nav')
+@include('layouts.backend.nav')
 <!--  END NAVBAR  -->
 
 <!--  BEGIN MAIN CONTAINER  -->
@@ -42,7 +42,7 @@
     <div class="search-overlay"></div>
 
     <!--  BEGIN SIDEBAR  -->
-    @include('backend.layouts.sidebar')
+    @include('layouts.backend.sidebar')
     <!--  END SIDEBAR  -->
 
     <!--  BEGIN CONTENT AREA  -->
@@ -50,7 +50,7 @@
         <main>
             @yield('content')
         </main>
-        @include('backend.layouts.footer')
+        @include('layouts.backend.footer')
     </div>
     <!--  END CONTENT AREA  -->
 

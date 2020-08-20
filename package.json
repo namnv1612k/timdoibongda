@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "apexcharts": "^3.19.3",
+        "datatable": "^2.0.2",
         "perfect-scrollbar": "^1.5.0"
     }
 }

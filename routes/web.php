@@ -22,8 +22,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'namespace' => 'Backend'], function () {
     Route::get('/', function () {
-        return view('backend/dashboard/analytic');
+        return redirect()->route('admin-analytic');
+    });
+
+    Route::get('/analytic', 'DashboardController@analytic')->name('admin-analytic');
+    Route::get('/sale', 'DashboardController@sale')->name('admin-sale');
+
+    Route::group(['prefix' => 'pitch'], function () {
+        Route::get('/', 'PitchController@list');
     });
 });

@@ -1,9 +1,12 @@
 @extends('layouts.backend')
 
+@section('title', __('pages.backend.dashboard.analytic.title'))
+
 @section('extra-css')
     <link href="{{ asset('backend/plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('backend/assets/css/dashboard/dash_1.css') }}" rel="stylesheet" type="text/css" class="dashboard-analytics" />
 @endsection
+
 @section('content')
     <div class="layout-px-spacing">
 
@@ -340,7 +343,7 @@
 
                         <div class="media">
                             <div class="w-img">
-                                <img src="backend/assets/img/profile-32.jpg" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/profile-32.jpg') }}" alt="avatar">
                             </div>
                             <div class="media-body">
                                 <h6>Jimmy Turner</h6>
@@ -404,7 +407,7 @@
 
                         <div class="media">
                             <div class="w-img">
-                                <img src="backend/assets/img/g-8.png" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/g-8.png') }}" alt="avatar">
                             </div>
                             <div class="media-body">
                                 <h6>Dev Summit - New York</h6>
@@ -415,10 +418,10 @@
                         <div class="card-bottom-section">
                             <h5>4 Members Going</h5>
                             <div class="img-group">
-                                <img src="backend/assets/img/profile-19.jpg" alt="avatar">
-                                <img src="backend/assets/img/profile-6.jpg" alt="avatar">
-                                <img src="backend/assets/img/profile-8.jpg" alt="avatar">
-                                <img src="backend/assets/img/profile-3.jpg" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/profile-19.jpg') }}" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/profile-6.jpg') }}" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/profile-8.jpg') }}" alt="avatar">
+                                <img src="{{ asset('backend/assets/img/profile-3.jpg') }}" alt="avatar">
                             </div>
                             <a href="javascript:void(0);" class="btn">View Details</a>
                         </div>
